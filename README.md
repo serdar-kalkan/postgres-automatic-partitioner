@@ -7,9 +7,9 @@ docker command to spin up the database server named pg from postgres docker imag
 
 docker pull postgres 
 
-docker run -d --name pg  \\ 
--e POSTGRES_PASSWORD=postgres  \\ 
--p 5432:5432  \\ 
+docker run -d --name pg \\   
+-e POSTGRES_PASSWORD=postgres \\  
+-p 5432:5432 \\   
 postgres
 
 docker command to root into the container >>
