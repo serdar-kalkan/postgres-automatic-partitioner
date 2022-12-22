@@ -2,11 +2,10 @@
 Simple node.js application client developed using ESmodules to demonstrate Postgres partitioning feature on the client side. Includes seed record generation script
 S/o goes to original idea and sourcecode owner Hussein Nasser.
 
-## Scripts to spin up dockerized container and check heartbeat
-docker command to spin up the database server named pg from postgres docker image (to be automated) >>
+## Scripts to spin up dockerized container for local PostgreSQL instance and check heartbeat
+Spin up a container named pg to run postgres image (to be automated) >>
 
-docker pull postgres 
-
+docker pull postgres:latest #could be altered if any specific version will be requested or may be recevied from the prompt
 docker run -d --name pg \\   
 -e POSTGRES_PASSWORD=postgres \\  
 -p 5432:5432 \\   
