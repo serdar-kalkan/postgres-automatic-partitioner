@@ -6,9 +6,10 @@ S/o goes to original idea and sourcecode owner Hussein Nasser.
 docker command to spin up the database server named pg from postgres docker image (to be automated) >>
 
 docker pull postgres 
-docker run -d --name pg \\ 
--e POSTGRES_PASSWORD=postgres \\ 
--p 5432:5432 \\ 
+
+docker run -d --name pg  \\ 
+-e POSTGRES_PASSWORD=postgres  \\ 
+-p 5432:5432  \\ 
 postgres
 
 docker command to root into the container >>
