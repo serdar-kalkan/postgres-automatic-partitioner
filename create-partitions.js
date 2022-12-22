@@ -1,26 +1,5 @@
 import pg from 'pg';
 
-/* Scrıpts and QA check cheatsheet
-docker command to spin up the database server named pg from postgres docker image >>
-docker run --name pg -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d postgres
-docker command to root into the container >>
-docker exec -it pg bash
-checking db server status for accepting connections >> 
-pg_isready
-bash script to connect into the database engine >>
-psql -U postgres
-check stat activity from clients >>
-select * from pg_stat_activity
-listing all the databases in the database server hosted in docker container >>
-\l
-connecting to the correct database >>
-\c {databaseName}
-checking definitons of database objects in the database
-\d 
-checking details of logical attributes in a given db table
-\d {tableName}
-*/
-
 try {
   const db_client_postgres = new pg.Client({
     "user": "postgres",
