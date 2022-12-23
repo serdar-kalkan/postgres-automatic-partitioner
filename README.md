@@ -17,7 +17,7 @@ docker exec -it pg bash
 checking db server status for accepting connections >> 
 pg_isready
 
-use psql (should be installed) to connect into the selected database (default postgres db) >>
+use psql (should be installed) to connect to postgres cluster (port and host also need to be provided in case of connection from outside of the container) >>
 psql -U postgres
 
 check stat activity from clients >>
