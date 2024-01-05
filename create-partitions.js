@@ -58,3 +58,5 @@ catch (ex) {
 }
 
 console.log("End of program");
+
+// TODO: Change path: insert-data.js and consider using COPY command
